@@ -1,4 +1,47 @@
-<br>
+Python Introduction
+Python Syntax
+Indentation
+Comments
+Variables
+Data Types
+Type Conversion / Type Casting
+Input & Output
+Operators
+Conditional Statements — if
+if-else
+if-elif-else
+Nested Conditions
+for Loop
+while Loop
+range()
+break
+continue
+pass
+Nested Loops
+Strings
+String Indexing
+String Slicing
+String Methods
+Lists
+List Indexing & Slicing
+List Operations
+List Methods
+Tuples
+Sets
+Set Operations
+Dictionaries
+Dictionary Operations & Methods
+Functions
+Function Parameters & Arguments
+Return Values
+Default & Keyword Arguments
+Variable Scope
+Lambda Functions
+List Comprehensions
+Dictionary Co
+
+TOPICS:
+
 1Q. Basic Information about Input & Output
 Input → Taking data from the user.
 
