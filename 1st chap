@@ -1,0 +1,2242 @@
+<br>
+1Q. Basic Information about Input & Output
+Input → Taking data from the user.
+
+Output → Displaying data to the user.
+
+In Python, we use:
+
+input() → to read user input (always returns a string).
+
+print() → to show output on the screen.
+
+Example:
+
+python
+name = input("Enter your name: ")
+print("Hello,", name)
+
+
+🧩 2. Types of Input & Output
+Input
+
+input() → always returns string.
+
+You can convert it to other types:
+
+python
+age = int(input("Enter your age: "))
+Output
+
+print() → displays values.
+
+Can print multiple items separated by commas:
+
+python
+print("Name:", name, "Age:", age)
+
+
+python
+print(f"Hello {name}, you are {age} years old")
+
+📜 3. Rules & Regulations
+✅ What we should do
+Use input() for user data collection.
+
+Convert input to correct type (int, float) when needed.
+
+Use print() for clear, readable output.
+
+Use f‑strings or formatting for neat output.
+
+Test input/output with small examples.
+
+❌ What we should not do
+❌ Forget that input() returns string by default.
+
+❌ Try to use input directly in math without conversion:
+
+python
+num = input("Enter number: ")
+print(num + 5)   # Error: str + int
+❌ Make output messy or unclear.
+
+❌ Overcomplicate formatting when simple print works.
+
+2Q. Basic Information about Operators
+Operators are special symbols or keywords used to perform operations on values and variables.
+
+Example:
+
+python
+a = 10
+b = 5
+print(a + b)   # + is an operator → 15
+🧩 2. Types of Operators in Python
+Arithmetic Operators
+
++ (addition), - (subtraction), * (multiplication), / (division)
+
+% (modulus), ** (exponent), // (floor division)
+
+Comparison (Relational) Operators
+
+== (equal), != (not equal), > (greater), < (less)
+
+>= (greater or equal), <= (less or equal)
+
+Logical Operators
+
+and, or, not
+
+Assignment Operators
+
+= (assign), +=, -=, *=, /=, %= etc.
+
+Bitwise Operators
+
+& (AND), | (OR), ^ (XOR), ~ (NOT), << (left shift), >> (right shift)
+
+Membership Operators
+
+in, not in
+
+Identity Operators
+
+is, is not
+
+📜 3. Rules & Regulations
+✅ What we should do
+Use arithmetic operators for math calculations.
+
+Use comparison operators to check conditions.
+
+Use logical operators to combine conditions.
+
+Use assignment operators to update variable values.
+
+Use membership operators to check if an item exists in a list/set/dict.
+
+Use identity operators to check if two variables point to the same object.
+
+❌ What we should not do
+❌ Mix incompatible types with operators (e.g., "5" + 5).
+
+❌ Confuse = (assignment) with == (comparison).
+
+❌ Forget that / always gives float, even if dividing integers.
+
+❌ Misuse is for value comparison (use == instead).
+
+❌ Overuse bitwise operators unless really needed.
+
+3Q Basic Information about Conditional Statements
+Conditional statements let your program make decisions.
+
+They check a condition (True/False) and run code accordingly.
+
+Example:
+
+python
+age = 18
+if age >= 18:
+    print("You are an adult")
+🧩 2. Types of Conditional Statements
+if statement
+
+Runs code only if condition is True.
+
+python
+if x > 0:
+    print("Positive number")
+if-else statement
+
+Runs one block if True, another if False.
+
+python
+if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+if-elif-else statement
+
+Checks multiple conditions in order.
+
+python
+marks = 85
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+else:
+    print("Grade C")
+Nested Conditions
+
+Conditions inside other conditions.
+
+python
+age = 20
+if age >= 18:
+    if age < 21:
+        print("Adult but not 21 yet")
+📜 3. Rules & Regulations
+✅ What we should do
+Use if for single checks, if-else for two outcomes, if-elif-else for multiple.
+
+Keep conditions clear and simple.
+
+Use indentation properly (Python depends on it).
+
+Test conditions with different values.
+
+Use logical operators (and, or, not) to combine conditions.
+
+❌ What we should not do
+❌ Forget indentation → leads to errors.
+
+❌ Write overly complex conditions in one line.
+
+❌ Use = instead of == when comparing.
+
+❌ Put unreachable code after a True condition (it will never run).
+
+❌ Nest too many conditions unnecessarily — makes code hard to read.
+
+4Q. Basic Information about Loops
+Loops are used to repeat a block of code multiple times.
+
+They help avoid writing the same code again and again.
+
+Python mainly has two loop types: for and while.
+
+🧩 2. Types of Loops
+for loop
+
+Iterates over a sequence (list, string, range).
+
+python
+for i in range(5):
+    print(i)   # prints 0 to 4
+while loop
+
+Runs as long as the condition is True.
+
+python
+x = 1
+while x <= 5:
+    print(x)
+    x += 1
+range() function
+
+Generates a sequence of numbers.
+
+python
+for i in range(2, 10, 2):   # start=2, stop=10, step=2
+    print(i)   # 2, 4, 6, 8
+Loop Control Statements
+
+break → exits the loop early.
+
+continue → skips current iteration.
+
+pass → does nothing, placeholder.
+
+Nested Loops
+
+Loops inside loops.
+
+python
+for i in range(3):
+    for j in range(2):
+        print(i, j)
+📜 3. Rules & Regulations
+✅ What we should do
+Use for when iterating over sequences.
+
+Use while when repeating until a condition changes.
+
+Use range() for number sequences.
+
+Use break and continue wisely to control flow.
+
+Keep loops simple and readable.
+
+Test with small ranges first.
+
+❌ What we should not do
+❌ Forget to update condition in while loop → causes infinite loop.
+
+❌ Write overly complex nested loops → hard to read.
+
+❌ Use break/continue unnecessarily → makes logic confusing.
+
+❌ Mix data types incorrectly inside loops.
+
+❌ Forget indentation → leads to errors.
+
+5Q 🔑 1. Basic Information about Strings
+A string is a sequence of characters (letters, numbers, symbols).
+
+Strings are used to store and work with text.
+
+In Python, strings are written inside quotes (' ' or " ").
+
+Example:
+
+python
+name = "Karthikeya"
+greeting = 'Hello'
+🧩 2. Types of String Operations
+String Indexing
+
+Access characters by position (index starts at 0).
+
+python
+word = "Python"
+print(word[0])   # P
+print(word[-1])  # n
+String Slicing
+
+Extract parts of a string.
+
+python
+text = "Programming"
+print(text[0:6])   # Progra
+print(text[3:])    # gramming
+String Methods
+
+Built‑in functions to work with strings.
+
+Examples:
+
+python
+s = "hello world"
+print(s.upper())     # HELLO WORLD
+print(s.lower())     # hello world
+print(s.title())     # Hello World
+print(s.strip())     # removes spaces
+print(s.replace("world", "Python"))  # hello Python
+print(s.split())     # ['hello', 'world']
+📜 3. Rules & Regulations
+✅ What we should do
+Use quotes (' ' or " ") to define strings.
+
+Use indexing to access single characters.
+
+Use slicing to extract parts of strings.
+
+Use string methods for formatting and cleaning text.
+
+Use f‑strings for neat output:
+
+python
+name = "Karthikeya"
+print(f"Hello {name}")
+❌ What we should not do
+❌ Forget that strings are immutable (cannot change characters directly).
+
+python
+word = "Python"
+word[0] = "J"   # Error
+❌ Mix strings with numbers without conversion.
+
+python
+age = 21
+print("Age: " + age)   # Error
+❌ Use wrong indexes (out of range).
+
+python
+word = "Hi"
+print(word[5])   # Error
+❌ Overcomplicate string operations when methods already exist.
+
+6Q 🔑 1. Basic Information about Lists
+A list is an ordered collection of items.
+
+Lists can store multiple values in one variable.
+
+They are mutable (we can change, add, or remove items).
+
+Defined using square brackets [ ].
+
+Example:
+
+python
+numbers = [1, 2, 3, 4]
+🧩 2. Types of List Operations
+Indexing & Slicing
+
+Access items by index (starts at 0).
+
+python
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])    # apple
+print(fruits[-1])   # cherry
+print(fruits[1:3])  # ['banana', 'cherry']
+List Operations
+
+Concatenation: list1 + list2
+
+Repetition: list * n
+
+Membership: item in list
+
+List Methods
+
+append() → add item at end
+
+insert() → add at specific position
+
+remove() → remove item
+
+pop() → remove by index
+
+sort() → sort list
+
+reverse() → reverse list
+
+len() → length of list
+
+Example:
+
+python
+numbers = [3, 1, 4]
+numbers.append(2)   # [3, 1, 4, 2]
+numbers.sort()      # [1, 2, 3, 4]
+📜 3. Rules & Regulations
+✅ What we should do
+Use lists to store multiple related values.
+
+Access items using indexing and slicing.
+
+Use methods (append, remove, sort) for modifications.
+
+Keep lists consistent (same type of items if possible).
+
+Use len() to check size.
+
+❌ What we should not do
+❌ Use wrong index (out of range).
+
+python
+numbers = [1, 2, 3]
+print(numbers[5])   # Error
+❌ Forget lists are mutable — changes affect the original list.
+
+❌ Mix unrelated data types unnecessarily.
+
+❌ Confuse lists with tuples (lists are mutable, tuples are not).
+
+7Q 🔑 1. Basic Information about Tuples
+A tuple is an ordered collection of items, similar to a list.
+
+But unlike lists, tuples are immutable (cannot be changed after creation).
+
+Defined using parentheses ( ).
+
+Example:
+
+python
+point = (4, 5)
+🧩 2. Types of Tuple Operations
+Indexing & Slicing
+
+Access items by index.
+
+python
+numbers = (10, 20, 30)
+print(numbers[0])    # 10
+print(numbers[-1])   # 30
+print(numbers[1:3])  # (20, 30)
+Tuple Methods
+
+count() → counts occurrences of a value.
+
+index() → returns index of first occurrence.
+
+python
+t = (1, 2, 2, 3)
+print(t.count(2))   # 2
+print(t.index(3))   # 3rd position
+Tuple Packing & Unpacking
+
+Packing: putting values into a tuple.
+
+Unpacking: extracting values from a tuple.
+
+python
+person = ("Karthikeya", 21)
+name, age = person
+print(name, age)   # Karthikeya 21
+📜 3. Rules & Regulations
+✅ What we should do
+Use tuples when data should not change.
+
+Access elements using indexing and slicing.
+
+Use packing/unpacking for neat assignments.
+
+Use tuples as dictionary keys (since they are immutable).
+
+Keep tuples small and meaningful.
+
+❌ What we should not do
+❌ Try to modify tuple elements → error.
+
+python
+t = (1, 2, 3)
+t[0] = 5   # Error
+❌ Confuse tuples with lists (lists are mutable, tuples are not).
+
+❌ Use tuples for large datasets that need frequent updates.
+
+❌ Forget parentheses when needed (though commas alone also create tuples).
+
+❌ Overuse nested tuples without clear structure.
+
+8Q🔑 1. Basic Information about Sets
+A set is an unordered collection of unique items.
+
+Sets automatically remove duplicates.
+
+Defined using curly braces { } or the set() function.
+
+Example:
+
+python
+fruits = {"apple", "banana", "apple"}
+print(fruits)   # {'apple', 'banana'} → duplicate removed
+🧩 2. Types of Set Operations
+Basic Operations
+
+Add: set.add(item)
+
+Remove: set.remove(item) / set.discard(item)
+
+Length: len(set)
+
+Set Operations (Math style)
+
+Union: set1 | set2 or set1.union(set2)
+
+Intersection: set1 & set2 or set1.intersection(set2)
+
+Difference: set1 - set2 or set1.difference(set2)
+
+Symmetric Difference: set1 ^ set2
+
+Frozen Set
+
+Immutable version of a set.
+
+python
+frozen = frozenset([1, 2, 3])
+📜 3. Rules & Regulations
+✅ What we should do
+Use sets when we need unique values only.
+
+Use union, intersection, difference for mathematical set operations.
+
+Use discard() if unsure whether an item exists (avoids error).
+
+Use sets for fast membership checks (item in set).
+
+Use frozenset when immutability is required.
+
+❌ What we should not do
+❌ Try to access items by index (sets are unordered).
+
+python
+s = {"a", "b"}
+print(s[0])   # Error
+❌ Add mutable items (like lists) into a set → not allowed.
+
+❌ Expect order — sets do not guarantee sequence.
+
+❌ Forget that duplicates are removed automatically.
+
+❌ Confuse sets with lists (lists allow duplicates, sets don’t).
+
+9Q 🔑 1. Basic Information about Dictionaries
+A dictionary is a collection of key–value pairs.
+
+Each key is unique, and it maps to a value.
+
+Defined using curly braces { }.
+
+Example:
+
+python
+student = {"name": "Karthikeya", "age": 21}
+🧩 2. Types of Dictionary Operations
+Accessing Values
+
+Use the key to get the value.
+
+python
+print(student["name"])   # Karthikeya
+Adding / Updating Items
+
+python
+student["grade"] = "A"   # add new key-value
+student["age"] = 22      # update value
+Removing Items
+
+pop(key) → removes key-value pair.
+
+del dict[key] → deletes key.
+
+clear() → removes all items.
+
+Dictionary Methods
+
+keys() → returns all keys.
+
+values() → returns all values.
+
+items() → returns key-value pairs.
+
+python
+print(student.keys())    # dict_keys(['name', 'age', 'grade'])
+📜 3. Rules & Regulations
+✅ What we should do
+Use dictionaries for structured data (like storing student info).
+
+Access values using keys.
+
+Keep keys unique.
+
+Use methods (keys, values, items) for iteration.
+
+Use meaningful keys (like "name", "age") instead of random ones.
+
+❌ What we should not do
+❌ Use duplicate keys → last one will overwrite.
+
+python
+d = {"a": 1, "a": 2}   # only "a": 2 remains
+❌ Try to access a key that doesn’t exist → error.
+
+python
+print(student["address"])   # KeyError
+❌ Forget that dictionaries are unordered (before Python 3.7).
+
+❌ Use mutable types (like lists) as keys → not allowed.
+
+❌ Overcomplicate dictionary nesting without clear structure.                          
+
+10Q 🔑 1. Basic Information about Functions
+A function is a block of reusable code that performs a specific task.
+
+Functions help avoid repetition and make programs modular.
+
+Defined using the def keyword.
+
+Example:
+
+python
+def greet():
+    print("Hello, Karthikeya")
+🧩 2. Types of Functions
+Built‑in Functions
+
+Already available in Python.
+
+Examples: print(), len(), type(), range(), sum().
+
+User‑defined Functions
+
+Functions created by the programmer.
+
+python
+def add(a, b):
+    return a + b
+Lambda Functions (Anonymous Functions)
+
+Small, one‑line functions using lambda.
+
+python
+square = lambda x: x * x
+print(square(5))   # 25
+📜 3. Rules & Regulations
+✅ What we should do
+Use functions to organize code into reusable blocks.
+
+Give meaningful names to functions.
+
+Use parameters to pass data into functions.
+
+Use return to send results back.
+
+Keep functions short and focused on one task.
+
+Use lambda functions for small, quick operations.
+
+❌ What we should not do
+❌ Write very long functions that do too many things.
+
+❌ Forget to call the function after defining it.
+
+❌ Use vague names like fun1, doStuff.
+
+❌ Forget to return values when needed.
+
+11Q 🔑 1. Basic Information about Recursion
+Recursion is when a function calls itself to solve a problem.
+
+It breaks a big problem into smaller sub‑problems until a base condition is met.
+
+Commonly used in mathematical problems, data structures (trees, graphs), and algorithms.
+
+Example:
+
+python
+def factorial(n):
+    if n == 1:        # base case
+        return 1
+    else:
+        return n * factorial(n - 1)   # recursive call
+🧩 2. Types of Recursion
+Direct Recursion
+
+Function calls itself directly.
+
+python
+def func():
+    func()
+Indirect Recursion
+
+Function A calls Function B, and Function B calls Function A.
+
+python
+def funcA():
+    funcB()
+
+def funcB():
+    funcA()
+📜 3. Rules & Regulations
+✅ What we should do
+Always define a base case to stop recursion.
+
+Use recursion for problems naturally defined in smaller sub‑problems (factorial, Fibonacci, tree traversal).
+
+Keep recursive functions simple and clear.
+
+Test with small inputs first.
+
+Understand stack behavior (each recursive call adds to the call stack).
+
+❌ What we should not do
+❌ Forget the base case → leads to infinite recursion.
+
+❌ Use recursion for problems that can be solved easily with loops.
+
+❌ Write overly complex recursive functions.
+
+❌ Pass wrong arguments that never reach the base case.
+
+❌ Ignore performance — recursion can be slower and memory‑heavy if not optimized.
+
+12Q 🔑 1. Basic Information about Data Structures
+Data structures are ways to organize and store data efficiently.
+
+They help in managing large amounts of data and performing operations quickly.
+
+Python has built‑in structures (lists, tuples, sets, dicts) and advanced ones (stacks, queues, trees, graphs).
+
+🧩 2. Types of Data Structures
+Stack (LIFO → Last In, First Out)
+
+Works like a pile of plates.
+
+Operations: push (add), pop (remove).
+
+python
+stack = []
+stack.append(10)   # push
+stack.append(20)
+stack.pop()        # removes 20
+Queue (FIFO → First In, First Out)
+
+Works like a line of people.
+
+Operations: enqueue (add), dequeue (remove).
+
+python
+from collections import deque
+q = deque([1, 2, 3])
+q.append(4)        # enqueue
+q.popleft()        # dequeue → removes 1
+Tree
+
+Hierarchical structure with nodes.
+
+Each node has children.
+
+Example: family tree, file system.
+
+python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+Graph
+
+Collection of nodes (vertices) connected by edges.
+
+Can be directed/undirected, weighted/unweighted.
+
+Example: social networks, maps.
+
+python
+graph = {
+    "A": ["B", "C"],
+    "B": ["A", "D"],
+    "C": ["A", "D"],
+    "D": ["B", "C"]
+}
+📜 3. Rules & Regulations
+✅ What we should do
+Use stack when last‑added data must be processed first.
+
+Use queue when first‑added data must be processed first.
+
+Use trees for hierarchical data (like folders).
+
+Use graphs for relationships and connections.
+
+Choose the right structure for the problem.
+
+Keep operations efficient (push/pop, enqueue/dequeue).
+
+❌ What we should not do
+❌ Confuse stack with queue (order matters).
+
+❌ Forget to handle empty stack/queue before removing.
+
+❌ Overcomplicate tree/graph design without need.
+
+❌ Use wrong structure for the problem (e.g., stack instead of queue).
+
+❌ Ignore performance — some structures are faster for certain tasks
+
+13Q 🔑 1. Basic Information about OOP
+Object-Oriented Programming (OOP) is a way of structuring code around objects (real-world entities).
+
+Objects combine data (attributes) and behavior (methods).
+
+In Python, OOP is implemented using classes and objects.
+
+Example:
+
+python
+class Student:
+    def __init__(self, name, age):   # constructor
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Hello, I am {self.name}")
+
+s1 = Student("Karthikeya", 21)   # object
+s1.greet()
+🧩 2. Key Concepts in OOP
+Class
+
+Blueprint for creating objects.
+
+Contains attributes (variables) and methods (functions).
+
+Object
+
+Instance of a class.
+
+Each object has its own data.
+
+Constructor (__init__)
+
+Special method to initialize object attributes.
+
+Inheritance
+
+Allows one class to use properties/methods of another.
+
+python
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):   # inherits Animal
+    def speak(self):
+        print("Dog barks")
+Encapsulation
+
+Hiding details, exposing only necessary parts.
+
+Achieved using private variables (_var or __var).
+
+Polymorphism
+
+Same method name, different behavior.
+
+python
+def add(x, y):
+    return x + y   # works for int, float, str
+📜 3. Rules & Regulations
+✅ What we should do
+Use classes to model real-world entities.
+
+Use objects to store data and behavior together.
+
+Use inheritance to reuse code.
+
+Use encapsulation to protect data.
+
+Use polymorphism for flexible behavior.
+
+Keep class names meaningful and methods clear.
+
+❌ What we should not do
+❌ Write huge classes with too many responsibilities.
+
+❌ Forget to initialize attributes in __init__.
+
+❌ Overuse inheritance when simple functions work.
+
+❌ Break encapsulation by exposing private data unnecessarily.
+
+❌ Confuse class methods with normal functions.
+
+14Q 1. Basic Information about Exception Handling
+Exceptions are errors that occur during program execution.
+
+Exception Handling allows us to manage these errors gracefully without crashing the program.
+
+In Python, we use try, except, finally, and else blocks.
+
+Example:
+
+python
+try:
+    num = int(input("Enter a number: "))
+    print(10 / num)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+🧩 2. Types of Exception Handling
+try-except
+
+Catch and handle errors.
+
+python
+try:
+    x = int("abc")
+except ValueError:
+    print("Invalid conversion")
+try-except-else
+
+Runs else block if no error occurs.
+
+python
+try:
+    num = 5
+except:
+    print("Error occurred")
+else:
+    print("No error, value is", num)
+try-finally
+
+finally block always runs (cleanup code).
+
+python
+try:
+    f = open("test.txt")
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("Closing program")
+Multiple Exceptions
+
+Handle different errors separately.
+
+python
+try:
+    num = int(input("Enter: "))
+    print(10 / num)
+except ValueError:
+    print("Invalid input")
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+📜 3. Rules & Regulations
+✅ What we should do
+Use try-except to handle possible errors.
+
+Use specific exceptions (ValueError, ZeroDivisionError) instead of generic except.
+
+Use finally for cleanup tasks (closing files, releasing resources).
+
+Use else for code that runs only if no error occurs.
+
+Keep exception handling simple and clear.
+
+❌ What we should not do
+❌ Ignore exceptions completely — program may crash.
+
+❌ Use bare except: without specifying error type (hard to debug).
+
+❌ Put too much code inside try block — makes it unclear.
+
+❌ Handle exceptions incorrectly (e.g., catching wrong error type).
+
+❌ Overuse exception handling for normal logic (use conditions instead)
+
+15Q. Basic Information about File Handling
+File handling allows programs to store and retrieve data permanently.
+
+In Python, we use the built‑in open() function to work with files.
+
+Modes:
+
+"r" → read
+
+"w" → write (overwrites file)
+
+"a" → append (adds to file)
+
+"x" → create new file
+
+"b" → binary mode
+
+"t" → text mode (default)
+
+Example:
+
+python
+f = open("data.txt", "r")
+print(f.read())
+f.close()
+🧩 2. Types of File Operations
+Opening a File
+
+python
+f = open("file.txt", "r")
+Reading a File
+
+read() → reads entire file.
+
+readline() → reads one line.
+
+readlines() → reads all lines into a list.
+
+python
+f = open("file.txt", "r")
+print(f.readline())
+Writing to a File
+
+write() → writes string to file.
+
+writelines() → writes list of strings.
+
+python
+f = open("file.txt", "w")
+f.write("Hello, Karthikeya")
+Appending to a File
+
+python
+f = open("file.txt", "a")
+f.write("\nNew line added")
+Closing a File
+
+Always close after use: f.close()
+
+Or use with statement (auto‑close):
+
+python
+with open("file.txt", "r") as f:
+    data = f.read()
+📜 3. Rules & Regulations
+✅ What we should do
+Always close files after use (or use with).
+
+Use correct mode (r, w, a) depending on task.
+
+Handle exceptions (file not found, permission denied).
+
+Use with open() for safer handling.
+
+Keep file paths correct and simple.
+
+❌ What we should not do
+❌ Forget to close files → may cause memory leaks.
+
+❌ Use "w" mode carelessly → overwrites existing data.
+
+❌ Assume file exists without checking.
+
+❌ Mix binary and text modes incorrectly.
+
+❌ Write non‑string data directly without conversion.
+
+🔑 1. Basic Information about Modules & Packages
+A module is a Python file (.py) that contains functions, classes, or variables.
+
+A package is a collection of modules organized together in a folder with an __init__.py file.
+
+They help in code reusability and organization.
+
+Example (module usage):
+
+python
+import math
+print(math.sqrt(16))   # 4.0
+🧩 2. Types of Modules & Packages
+Built‑in Modules
+
+Already available in Python.
+
+Examples: math, random, os, sys, datetime.
+
+User‑defined Modules
+
+Created by programmers.
+
+python
+# mymodule.py
+def greet(name):
+    return f"Hello {name}"
+python
+import mymodule
+print(mymodule.greet("Karthikeya"))
+Packages
+
+Collection of modules.
+
+Example: numpy, pandas, requests.
+
+python
+import numpy as np
+arr = np.array([1, 2, 3])
+print(arr)
+📜 3. Rules & Regulations
+✅ What we should do
+Use built‑in modules for common tasks.
+
+Create user‑defined modules for reusable code.
+
+Use packages for advanced functionality (data, web, ML).
+
+Import only what is needed (from math import sqrt).
+
+Keep module and package names meaningful.
+
+❌ What we should not do
+❌ Import everything unnecessarily (from module import *).
+
+❌ Forget to install external packages before using (pip install).
+
+❌ Use wrong names while importing → leads to errors.
+
+❌ Mix unrelated functions in one module.
+
+❌ Overcomplicate package structure without need
+
+16Q . Basic Information about Libraries
+Libraries are collections of modules and packages that provide extra functionality.
+
+In Python, popular libraries like NumPy, Pandas, and Matplotlib are widely used for data science and numerical tasks.
+
+They save time by offering ready‑made functions instead of writing everything from scratch.
+
+🧩 2. Key Libraries
+NumPy (Numerical Python)
+
+Used for numerical computations.
+
+Provides arrays (faster than lists).
+
+Supports mathematical operations, linear algebra, random numbers.
+
+python
+import numpy as np
+arr = np.array([1, 2, 3])
+print(arr * 2)   # [2 4 6]
+Pandas
+
+Used for data analysis and manipulation.
+
+Provides Series (1D) and DataFrame (2D table).
+
+Makes handling CSV, Excel, SQL data easy.
+
+python
+import pandas as pd
+data = {"Name": ["A", "B"], "Age": [20, 21]}
+df = pd.DataFrame(data)
+print(df)
+Matplotlib
+
+Used for data visualization (graphs, charts).
+
+Can plot line, bar, scatter, pie charts.
+
+python
+import matplotlib.pyplot as plt
+x = [1, 2, 3]
+y = [2, 4, 6]
+plt.plot(x, y)
+plt.show()
+📜 3. Rules & Regulations
+✅ What we should do
+Use NumPy for fast numerical operations.
+
+Use Pandas for structured data (tables, CSVs).
+
+Use Matplotlib for visualizing results.
+
+Import libraries with short aliases (np, pd, plt).
+
+Install external libraries using pip install.
+
+❌ What we should not do
+❌ Forget to install libraries before importing.
+
+❌ Mix up data structures (NumPy arrays vs Pandas DataFrames).
+
+❌ Overcomplicate plots when simple ones are enough.
+
+❌ Load huge datasets without optimization.
+
+❌ Ignore documentation — each library has powerful features
+
+17Q🔑 1. Basic Information
+These are advanced features that make Python more powerful and flexible.
+
+They help in writing clean, efficient, and reusable code.
+
+🧩 2. Types of Advanced Topics
+Iterators
+
+Objects that can be iterated (looped) one element at a time.
+
+Use iter() and next().
+
+python
+nums = [1, 2, 3]
+it = iter(nums)
+print(next(it))   # 1
+print(next(it))   # 2
+Generators
+
+Special functions that yield values one at a time using yield.
+
+More memory‑efficient than lists.
+
+python
+def gen_numbers():
+    for i in range(3):
+        yield i
+for num in gen_numbers():
+    print(num)   # 0, 1, 2
+Decorators
+
+Functions that modify the behavior of other functions.
+
+Use @decorator_name above a function.
+
+python
+def decorator(func):
+    def wrapper():
+        print("Before function")
+        func()
+        print("After function")
+    return wrapper
+
+@decorator
+def greet():
+    print("Hello")
+
+greet()
+📜 3. Rules & Regulations
+✅ What we should do
+Use iterators when looping through data step by step.
+
+Use generators for large datasets to save memory.
+
+Use decorators to add extra functionality (logging, authentication).
+
+Keep decorators simple and reusable.
+
+Use yield instead of returning lists when possible.
+
+❌ What we should not do
+❌ Forget that generators can only be iterated once.
+
+❌ Write overly complex decorators that confuse logic.
+
+❌ Use iterators manually when a for loop is simpler.
+
+❌ Mix up return and yield in generators.
+
+❌ Apply decorators unnecessarily when normal functions are enough.
+
+18Q🔑 1. Basic Information about Regular Expressions
+Regular Expressions (Regex) are patterns used to match, search, and manipulate text.
+
+In Python, we use the re module for regex operations.
+
+Regex is powerful for tasks like validating emails, extracting numbers, or replacing text.
+
+Example:
+
+python
+import re
+pattern = r"\d+"   # matches digits
+text = "My age is 21"
+print(re.findall(pattern, text))   # ['21']
+🧩 2. Types of Regex Operations
+Searching
+
+re.search(pattern, string) → finds first match.
+
+python
+re.search(r"cat", "A cat is here")
+Finding All Matches
+
+re.findall(pattern, string) → returns all matches.
+
+python
+re.findall(r"\d+", "Room 21, Floor 3")   # ['21', '3']
+Matching from Start
+
+re.match(pattern, string) → checks only at beginning.
+
+Replacing
+
+re.sub(pattern, replacement, string) → replaces matches.
+
+python
+re.sub(r"\d+", "X", "Room 21")   # Room X
+Splitting
+
+re.split(pattern, string) → splits string by pattern.
+
+python
+re.split(r"\s+", "Hello World Python")   # ['Hello', 'World', 'Python']
+📜 3. Rules & Regulations
+✅ What we should do
+Use raw strings (r"pattern") for regex to avoid escape issues.
+
+Test regex patterns with sample text.
+
+Use findall for multiple matches.
+
+Use sub for replacements.
+
+Keep patterns simple and readable.
+
+❌ What we should not do
+❌ Write overly complex regex patterns → hard to debug.
+
+❌ Forget that regex is case‑sensitive by default.
+
+❌ Use regex when simple string methods (split, replace) are enough.
+
+❌ Forget to escape special characters (., *, ?, +).
+
+❌ Assume regex will always match — handle None results
+
+19Q 🔑 1. Basic Information about Memory Management
+Memory management in Python is automatic — handled by the Python interpreter.
+
+Python uses a private heap space where all objects and data structures are stored.
+
+The memory manager allocates and releases memory as needed.
+
+Garbage Collection (GC) automatically removes unused objects to free memory.
+
+🧩 2. Key Concepts
+Reference Counting
+
+Each object keeps track of how many references point to it.
+
+When count = 0 → object is deleted.
+
+python
+a = [1, 2, 3]
+b = a
+del a
+# object still exists because b refers to it
+Garbage Collector
+
+Handles cyclic references (objects referring to each other).
+
+Uses algorithms to detect and clean unused objects.
+
+python
+import gc
+gc.collect()   # manually trigger garbage collection
+Dynamic Memory Allocation
+
+Python allocates memory dynamically when objects are created.
+
+Memory is released when objects are no longer needed.
+
+Object Lifecycle
+
+Creation → Usage → Destruction (when no references remain).
+
+📜 3. Rules & Regulations
+✅ What we should do
+Trust Python’s automatic memory management for most tasks.
+
+Use del to remove references when no longer needed.
+
+Use gc.collect() only when necessary (manual cleanup).
+
+Keep code clean to avoid unnecessary references.
+
+Use context managers (with) to handle resources safely.
+
+❌ What we should not do
+❌ Manually manage memory unless absolutely required.
+
+❌ Create circular references without cleanup.
+
+❌ Keep unused large objects in memory.
+
+❌ Overuse gc.collect() — slows down performance.
+
+❌ Confuse memory leaks with normal Python behavior.
+
+20Q 🔑 1. Basic Information
+Multithreading → Running multiple threads (lightweight processes) within a single program.
+
+Multiprocessing → Running multiple processes, each with its own memory space.
+
+Both are used to improve performance and handle tasks simultaneously.
+
+🧩 2. Types & Examples
+Multithreading
+
+Useful for I/O‑bound tasks (like file handling, network requests).
+
+Threads share the same memory.
+
+python
+import threading
+
+def task():
+    print("Task running")
+
+t1 = threading.Thread(target=task)
+t2 = threading.Thread(target=task)
+t1.start()
+t2.start()
+Multiprocessing
+
+Useful for CPU‑bound tasks (like heavy calculations).
+
+Each process has its own memory space.
+
+python
+import multiprocessing
+
+def square(n):
+    print(n * n)
+
+p1 = multiprocessing.Process(target=square, args=(5,))
+p2 = multiprocessing.Process(target=square, args=(10,))
+p1.start()
+p2.start()
+Thread vs Process
+
+Threads → faster, but share memory (risk of conflicts).
+
+Processes → safer, but heavier (more memory usage).
+
+📜 3. Rules & Regulations
+✅ What we should do
+Use multithreading for tasks waiting on input/output.
+
+Use multiprocessing for tasks requiring heavy computation.
+
+Always manage threads/processes properly (join() to wait for completion).
+
+Use synchronization (locks, queues) to avoid conflicts.
+
+Keep tasks independent when using multiprocessing.
+
+❌ What we should not do
+❌ Forget to join threads/processes → program may exit early.
+
+❌ Share mutable data between threads without locks.
+
+❌ Use multithreading for CPU‑heavy tasks (Python’s GIL limits performance).
+
+❌ Overuse multiprocessing → too many processes slow down system.
+
+❌ Ignore error handling in concurrent tasks
+
+21Q1. Basic Information
+Networking in Python allows communication between programs over the internet or local networks.
+
+Two main approaches:
+
+Sockets → low‑level communication (like chat apps, servers).
+
+HTTP requests → high‑level communication with web servers (APIs, websites).
+
+🧩 2. Types of Networking
+Sockets (Low‑level)
+
+Used for direct communication between client and server.
+
+Example: simple chat server.
+
+python
+import socket
+
+s = socket.socket()
+s.bind(("localhost", 9999))
+s.listen(1)
+conn, addr = s.accept()
+print("Connected:", addr)
+conn.send(b"Hello Client")
+conn.close()
+HTTP Requests (High‑level)
+
+Used to interact with web APIs and websites.
+
+Common library: requests.
+
+python
+import requests
+
+response = requests.get("https://api.github.com")
+print(response.status_code)
+print(response.json())
+Client vs Server
+
+Client → sends request.
+
+Server → responds to request.
+
+📜 3. Rules & Regulations
+✅ What we should do
+Use sockets for custom communication protocols.
+
+Use requests for web APIs and HTTP communication.
+
+Always handle errors (timeouts, connection errors).
+
+Close sockets after use.
+
+Use JSON parsing when working with APIs.
+
+❌ What we should not do
+❌ Forget to close sockets → may cause resource leaks.
+
+❌ Ignore response codes (200 = success, 404 = not found, 500 = server error).
+
+❌ Mix up client and server roles.
+
+❌ Send sensitive data without encryption.
+
+❌ Overuse low‑level sockets when HTTP libraries are simpler.
+
+22Q🔑 1. Basic Information
+Database handling allows Python programs to store, retrieve, and manage structured data.
+
+Python supports multiple databases through libraries like sqlite3, mysql-connector, and psycopg2.
+
+Databases are essential for applications like websites, apps, and data analysis.
+
+🧩 2. Types of Database Handling
+SQLite (Lightweight, Built‑in)
+
+Comes with Python by default.
+
+Stores data in a single file.
+
+python
+import sqlite3
+conn = sqlite3.connect("test.db")
+cur = conn.cursor()
+cur.execute("CREATE TABLE users (id INT, name TEXT)")
+conn.commit()
+conn.close()
+MySQL (Popular, Open‑source)
+
+Requires external installation.
+
+Good for large applications.
+
+python
+import mysql.connector
+conn = mysql.connector.connect(user="root", password="1234", host="localhost", database="testdb")
+cur = conn.cursor()
+cur.execute("SELECT * FROM users")
+for row in cur:
+    print(row)
+conn.close()
+PostgreSQL (Advanced, Open‑source)
+
+Powerful features like JSON support, advanced queries.
+
+Requires psycopg2 library.
+
+python
+import psycopg2
+conn = psycopg2.connect(user="postgres", password="1234", host="localhost", database="testdb")
+cur = conn.cursor()
+cur.execute("SELECT * FROM users")
+print(cur.fetchall())
+conn.close()
+📜 3. Rules & Regulations
+✅ What we should do
+Use SQLite for small projects or testing.
+
+Use MySQL/PostgreSQL for larger, production‑level applications.
+
+Always close connections after use.
+
+Use parameterized queries to prevent SQL injection.
+
+Keep database schema organized and meaningful.
+
+❌ What we should not do
+❌ Forget to commit changes (conn.commit()) after insert/update.
+
+❌ Hardcode sensitive credentials in code.
+
+❌ Leave connections open → wastes resources.
+
+❌ Use raw string queries with user input (risk of SQL injection).
+
+❌ Mix up database types (SQLite vs MySQL vs PostgreSQL).
+
+23Q 🔑 1. Basic Information
+Web development in Python is done using frameworks like Flask and Django.
+
+These frameworks help build websites, APIs, and web applications quickly.
+
+Flask → lightweight, simple, flexible.
+
+Django → full‑featured, batteries‑included, large projects.
+
+🧩 2. Types of Frameworks
+Flask (Micro‑framework)
+
+Minimal, easy to learn.
+
+Good for small projects and APIs.
+
+python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello, Karthikeya!"
+
+if __name__ == "__main__":
+    app.run()
+Django (Full‑stack framework)
+
+Comes with built‑in features: authentication, database ORM, admin panel.
+
+Good for large, complex applications.
+
+python
+# views.py
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Hello, Karthikeya!")
+API Development
+
+Flask and Django can both be used to build REST APIs.
+
+Example: Flask with Flask-RESTful, Django with Django REST Framework.
+
+📜 3. Rules & Regulations
+✅ What we should do
+Use Flask for small apps, prototypes, or APIs.
+
+Use Django for large apps with many features.
+
+Keep routes and views simple.
+
+Use templates for HTML rendering.
+
+Follow MVC/MVT design patterns.
+
+Secure apps with authentication and validation.
+
+❌ What we should not do
+❌ Mix business logic directly inside routes/views.
+
+❌ Ignore security (SQL injection, CSRF, XSS).
+
+❌ Overcomplicate Flask apps with too many extensions.
+
+❌ Use Django for very small projects (too heavy).
+
+❌ Forget to structure project folders properly
+
+24Q 🔑 1. Basic Information
+Testing ensures that code works correctly and avoids future bugs.
+
+Python provides built‑in unittest framework and external libraries like PyTest.
+
+Tests check functions, classes, and modules automatically.
+
+🧩 2. Types of Testing
+Unit Testing (using unittest)
+
+Tests small parts of code (functions, methods).
+
+Built into Python.
+
+python
+import unittest
+
+def add(x, y):
+    return x + y
+
+class TestMath(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+
+if __name__ == "__main__":
+    unittest.main()
+PyTest (popular external library)
+
+Simpler and more powerful than unittest.
+
+Supports fixtures, plugins, and advanced features.
+
+python
+def add(x, y):
+    return x + y
+
+def test_add():
+    assert add(2, 3) == 5
+Other Testing Types
+
+Integration Testing → test multiple modules together.
+
+System Testing → test entire application.
+
+Regression Testing → ensure new changes don’t break old code.
+
+📜 3. Rules & Regulations
+✅ What we should do
+Write unit tests for every important function.
+
+Use meaningful test names (test_add, test_login).
+
+Run tests regularly during development.
+
+Use PyTest for simplicity and advanced features.
+
+Automate testing with CI/CD pipelines.
+
+❌ What we should not do
+❌ Skip testing small functions — bugs often hide there.
+
+❌ Write unclear test cases.
+
+❌ Depend on manual testing only.
+
+❌ Ignore failed tests — fix them immediately.
+
+❌ Mix test code with production code
+
+25Q 1. Basic Information
+Security in Python ensures data protection and safe communication.
+
+Common techniques:
+
+Encryption → converts data into unreadable form (can be decrypted).
+
+Hashing → one‑way conversion of data (cannot be reversed).
+
+Authentication → verifying user identity.
+
+🧩 2. Types of Security Techniques
+Encryption
+
+Uses algorithms to encode/decode data.
+
+Example: cryptography library.
+
+python
+from cryptography.fernet import Fernet
+
+key = Fernet.generate_key()
+f = Fernet(key)
+token = f.encrypt(b"Hello Karthikeya")
+print(token)
+print(f.decrypt(token))
+Hashing
+
+One‑way function, used for storing passwords.
+
+Example: hashlib.
+
+python
+import hashlib
+password = "mypassword"
+hashed = hashlib.sha256(password.encode()).hexdigest()
+print(hashed)
+Authentication
+
+Verifies users (login systems, tokens).
+
+Often combined with hashing + encryption.
+
+Example: JWT (JSON Web Tokens) for web apps.
+
+📜 3. Rules & Regulations
+✅ What we should do
+Use encryption for sensitive data transfer.
+
+Use hashing for password storage (never store plain text).
+
+Use authentication to verify users.
+
+Use secure libraries (cryptography, hashlib).
+
+Keep keys and secrets safe (environment variables).
+
+❌ What we should not do
+❌ Store passwords in plain text.
+
+❌ Use weak algorithms (like MD5, SHA1).
+
+❌ Hardcode keys directly in code.
+
+❌ Skip authentication in web apps.
+
+26Q1. Basic Information
+Data Science & Machine Learning (ML) use Python libraries to analyze data, build models, and make predictions.
+
+Popular libraries:
+
+Scikit‑Learn → simple ML algorithms.
+
+TensorFlow → deep learning framework by Google.
+
+PyTorch → deep learning framework by Facebook (Meta).
+
+🧩 2. Key Libraries
+Scikit‑Learn
+
+Best for beginners.
+
+Provides ML algorithms: regression, classification, clustering.
+
+python
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+X = [[1], [2], [3]]
+y = [2, 4, 6]
+model.fit(X, y)
+print(model.predict([[4]]))   # [8.]
+TensorFlow
+
+Powerful for deep learning (neural networks).
+
+Used for image recognition, NLP, etc.
+
+python
+import tensorflow as tf
+x = tf.constant(5)
+y = tf.constant(3)
+print(x + y)   # tf.Tensor(8, shape=(), dtype=int32)
+PyTorch
+
+Flexible and easy to debug.
+
+Popular in research and production.
+
+python
+import torch
+x = torch.tensor([5])
+y = torch.tensor([3])
+print(x + y)   # tensor([8])
+📜 3. Rules & Regulations
+✅ What we should do
+Use Scikit‑Learn for simple ML tasks.
+
+Use TensorFlow/PyTorch for deep learning.
+
+Preprocess data before training models.
+
+Split data into training and testing sets.
+
+Evaluate models with metrics (accuracy, precision, recall).
+
+❌ What we should not do
+❌ Train models on raw, unclean data.
+
+❌ Forget to test models on unseen data.
+
+❌ Overfit models (too much training on small dataset).
+
+❌ Use deep learning for very simple problems (waste of resources).
+
+❌ Ignore performance — ML can be computationally heavy.
+
+27Q. Basic Information
+GUI (Graphical User Interface) lets you build desktop applications with windows, buttons, text boxes, etc.
+
+Python provides libraries like Tkinter (built‑in) and PyQt (external, more advanced).
+
+Tkinter → simple, lightweight.
+
+PyQt → powerful, feature‑rich.
+
+🧩 2. Types of GUI Frameworks
+Tkinter (Built‑in)
+
+Comes with Python by default.
+
+Easy to learn, good for small apps.
+
+python
+import tkinter as tk
+
+root = tk.Tk()
+root.title("My App")
+
+label = tk.Label(root, text="Hello Karthikeya!")
+label.pack()
+
+button = tk.Button(root, text="Click Me", command=lambda: print("Button clicked"))
+button.pack()
+
+root.mainloop()
+PyQt (External, Advanced)
+
+Requires installation (pip install PyQt5).
+
+Provides modern widgets, themes, and advanced features.
+
+python
+from PyQt5.QtWidgets import QApplication, QLabel
+
+app = QApplication([])
+label = QLabel("Hello Karthikeya!")
+label.show()
+app.exec_()
+Other Options
+
+Kivy → for mobile + desktop apps.
+
+wxPython → another desktop GUI library.
+
+📜 3. Rules & Regulations
+✅ What we should do
+Use Tkinter for simple desktop apps.
+
+Use PyQt for professional, complex GUIs.
+
+Always call mainloop() (Tkinter) or exec_() (PyQt) to run the app.
+
+Keep GUI code organized (separate logic from UI).
+
+Use layout managers (pack, grid, place) in Tkinter.
+
+❌ What we should not do
+❌ Mix GUI code with heavy logic — keep them separate.
+
+❌ Forget to install PyQt before using.
+
+❌ Hardcode widget positions without layout managers.
+
+❌ Overcomplicate small apps with PyQt.
+
+❌ Ignore event handling (buttons, inputs won’t work)
+
+28Q . Basic Information
+Automation means making Python do repetitive tasks automatically.
+
+Common areas:
+
+Scripts → automate local tasks (file renaming, backups).
+
+Web Scraping → extract data from websites.
+
+Selenium → automate browsers (click, fill forms, test websites).
+
+🧩 2. Types of Automation
+Scripts (Local Automation)
+
+Automate everyday tasks on your computer.
+
+python
+import os
+
+files = os.listdir()
+for f in files:
+    print("Found:", f)
+Web Scraping (Data Extraction)
+
+Use requests + BeautifulSoup.
+
+python
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://example.com"
+page = requests.get(url)
+soup = BeautifulSoup(page.text, "html.parser")
+print(soup.title.text)
+Selenium (Browser Automation)
+
+Automates browsers for testing or scraping dynamic sites.
+
+python
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get("https://google.com")
+search_box = driver.find_element("name", "q")
+search_box.send_keys("Python Automation")
+search_box.submit()
+📜 3. Rules & Regulations
+✅ What we should do
+Use scripts for repetitive local tasks.
+
+Use web scraping for static websites.
+
+Use Selenium for dynamic websites (JavaScript heavy).
+
+Respect website rules (robots.txt).
+
+Handle exceptions (timeouts, missing elements).
+
+❌ What we should not do
+❌ Scrape websites without permission (illegal/unethical).
+
+❌ Overload servers with too many requests.
+
+❌ Forget to close browser sessions in Selenium.
+
+❌ Mix automation logic with business logic.
+
+❌ Ignore error handling (network failures, missing data)
+
+29Q 1. Basic Information
+DevOps tools in Python help manage environments, dependencies, and deployment.
+
+Common tools:
+
+Virtualenv → create isolated Python environments.
+
+Pip → install and manage Python packages.
+
+Docker → containerize applications for deployment.
+
+🧩 2. Types of Tools
+Virtualenv
+
+Creates separate environments so projects don’t conflict.
+
+bash
+pip install virtualenv
+virtualenv myenv
+source myenv/bin/activate   # Linux/Mac
+myenv\Scripts\activate      # Windows
+Pip (Package Installer for Python)
+
+Installs external libraries.
+
+bash
+pip install requests
+pip uninstall requests
+pip list
+Docker (Containers)
+
+Packages app + dependencies into a container.
+
+Useful for deployment and scaling.
+
+dockerfile
+# Dockerfile
+FROM python:3.10
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["python", "app.py"]
+📜 3. Rules & Regulations
+✅ What we should do
+Use virtualenv to isolate project dependencies.
+
+Use pip to install/manage packages.
+
+Use Docker for deployment and portability.
+
+Keep requirements.txt updated for reproducibility.
+
+Test containers locally before deploying.
+
+❌ What we should not do
+❌ Install packages globally without need → causes conflicts.
+
+❌ Forget to activate virtual environments.
+
+❌ Hardcode secrets in Dockerfiles.
+
+❌ Ignore versioning in requirements.txt.
+
+❌ Use Docker for trivial scripts (overkill).
+
+30Q 1. Basic Information
+APIs (Application Programming Interfaces) allow communication between applications.
+
+REST APIs → most common style, use HTTP methods (GET, POST, PUT, DELETE).
+
+Python frameworks like Flask and FastAPI make building APIs simple.
+
+Cloud platforms (AWS, Azure, GCP) host APIs and scale applications.
+
+🧩 2. Types of API Development
+REST API with Flask
+
+Lightweight, easy to build.
+
+python
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route("/api/data")
+def get_data():
+    return jsonify({"message": "Hello Karthikeya!"})
+
+if __name__ == "__main__":
+    app.run()
+REST API with FastAPI
+
+Modern, fast, supports async.
+
+Built‑in documentation (Swagger UI).
+
+python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/api/data")
+def get_data():
+    return {"message": "Hello Karthikeya!"}
+Cloud Deployment
+
+APIs can be deployed on AWS Lambda, Azure Functions, or Google Cloud Run.
+
+Docker containers often used for portability.
+
+📜 3. Rules & Regulations
+✅ What we should do
+Use Flask for simple APIs.
+
+Use FastAPI for modern, scalable APIs.
+
+Follow REST principles (use correct HTTP methods).
+
+Secure APIs with authentication (JWT, OAuth).
+
+Document APIs for easy usage.
+
+Deploy APIs on cloud for scalability.
+
+❌ What we should not do
+❌ Expose sensitive data in API responses.
+
+❌ Ignore error handling (return proper status codes).
+
+❌ Mix business logic directly inside routes.
+
+❌ Forget to test APIs before deployment.
+
+❌ Leave APIs unsecured (risk of attacks)
+
+31Q1. Basic Information
+Best Practices → guidelines to write clean, efficient, and maintainable Python code.
+
+Design Patterns → reusable solutions to common programming problems.
+
+Following these makes your code professional and easier to scale.
+
+🧩 2. Types of Best Practices & Patterns
+Best Practices
+
+Follow PEP 8 (Python style guide).
+
+Use meaningful variable/function names.
+
+Keep functions short and focused.
+
+Use docstrings for documentation.
+
+Handle exceptions properly.
+
+python
+def divide(a, b):
+    """Divide two numbers safely"""
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Cannot divide by zero"
+Design Patterns
+
+Singleton → only one instance of a class.
+
+Factory → create objects without exposing creation logic.
+
+Observer → notify multiple objects when state changes.
+
+Decorator Pattern → add functionality dynamically.
+
+python
+# Singleton Example
+class Singleton:
+    _instance = None
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+Code Organization
+
+Use modules and packages.
+
+Separate logic, UI, and data handling.
+
+Write unit tests for reliability.
+
+📜 3. Rules & Regulations
+✅ What we should do
+Follow PEP 8 for clean code.
+
+Use design patterns when solving recurring problems.
+
+Write reusable and modular code.
+
+Document code with comments and docstrings.
+
+Test code regularly.
+
+❌ What we should not do
+❌ Write long, messy functions.
+
+❌ Ignore exceptions and error handling.
+
+❌ Hardcode values (use constants/config files).
+
+❌ Overuse design patterns unnecessarily.
+
+❌ Skip documentation and testing  </p>
