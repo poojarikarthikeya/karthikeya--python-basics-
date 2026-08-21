@@ -1,0 +1,31 @@
+#numarical opperation loops#
+
+#counting numbers
+print("COUNTING NUMBERS :")
+num =int(input("ENTER YOUR LATEST NUMBER:"))
+for i in range (1,num+1):
+    print(i)
+
+#Addition of two numbers
+print("ADDITION OF TWO NUMBERS :")
+num1=int(input("ENTER YOUR FIRST NUMBER:"))
+num2=int(input("ENTER YOUR SECOND NUMBER:"))
+total = num1 +num2
+print("THE SUM OF THE TWO NUMBERS IS =", total)
+
+#Addiyion of n numbers
+print("ADDITION OF N NUMBERS :")
+total =0
+count = int(input("ENTER THE HOW MANY NUMBERS YOU ADDING:"))
+for i in range(count):
+    num=int(input(f"ENTER YOUR NUMBER {i+1} ="))
+    total +=num
+print("THE SUM OF THE NUMBERS IS =", total)
+
+#Factorial of a number
+print("FACTORIAL OF A NUMBER :")
+num = int(input("ENTER YOUR NUMBER:"))
+fact=1
+for i in range(1,num+1):
+    fact *=i
+print("THE FACTORIAL OF THE NUMBER IS:=", fact)
