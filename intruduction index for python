@@ -1,7 +1,6 @@
-Python Introduction
+"""Python Introduction
 Python Syntax
 Indentation
-Comments
 Variables
 Data Types
 Type Conversion / Type Casting
@@ -2230,7 +2229,7 @@ Handle exceptions properly.
 
 python
 def divide(a, b):
-    """Divide two numbers safely"""
+    ""Divide two numbers safely""
     try:
         return a / b
     except ZeroDivisionError:
@@ -2283,3 +2282,4 @@ Test code regularly.
 ❌ Overuse design patterns unnecessarily.
 
 ❌ Skip documentation and testing  </p>
+"""
