@@ -1,7 +1,6 @@
 #numarical opperation loops#
 
 #counting numbers
-print("COUNTING NUMBERS :")
 num =int(input("ENTER YOUR LATEST NUMBER:"))
 for i in range (1,num+1):
     print(i)
